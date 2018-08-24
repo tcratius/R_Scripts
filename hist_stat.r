@@ -5,8 +5,6 @@
 #***********
 source("R/hist_stat.R")
 
-
-
 #*************
 # Place this is a file and folder of the same name, you can
 # edit source("R/hist_stat.R") if you want to change path etc.
@@ -22,7 +20,6 @@ hist_stat <- function(df, x, b) {
       lwd = 1, 
       col = 'red') +
     theme_classic()
-
 }    
 #************
 # Function call, place in main code. parameters data.frame, 
