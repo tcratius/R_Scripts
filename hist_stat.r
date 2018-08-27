@@ -13,6 +13,7 @@ source("R/hist_stat.R")
 #************
 hist_stat <- function(df, x, b) {
   ggplot(df, aes(df[[x]])) +
+    
     geom_histogram(aes(y = stat(density)), bins = b) +
     stat_function(
       fun = dnorm, 
@@ -25,4 +26,4 @@ hist_stat <- function(df, x, b) {
 # Function call, place in main code. parameters data.frame, 
 # column_index, bin size in integer.
 #***********
-hist_stat(h.set, 12, 40)
+hist_stat(df, 12, 40)
