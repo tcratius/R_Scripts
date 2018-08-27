@@ -1,14 +1,16 @@
 #************
 # Review probability of a population is inclusive, mutatlly exlusive p 212
+# For all events wher
 #***********
 
 #************
-# Making simulations of population mean
+# Making simulations of population mean.
 #***********
+```{R pop_simulation}
 mu <- 100; sigma <- 16
 x <- rnorm(16, mu, sigma) 
 M <- 4; n <- 16 # M for more
-
+```
 #************
 # (1) Randomly generates sample distribution around the mean
 # based on sample size (n), population mu and sigma
